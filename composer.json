@@ -3,16 +3,6 @@
     "type": "library",
     "keywords": ["search", "searchengine", "graymore"],
     "license": "MIT",
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Graymore\\SearchEngine\\SearchServiceProvider"
-            ],
-            "aliases": {
-                "SearchEngine": "Graymore\\SearchEngine\\SearchEngine"
-            }
-        }
-    },
     "autoload": {
         "psr-4": {
             "Graymore\\SearchEngine\\": "src/"
@@ -21,6 +11,16 @@
     "autoload-dev": {
         "psr-4": {
             "Graymore\\SearchEngine\\": "test/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Graymore\\SearchEngine\\SearchServiceProvider"
+            ],
+            "aliases": {
+                "SearchEngine": "Graymore\\SearchEngine\\SearchEngine"
+            }
         }
     },
     "authors": [
