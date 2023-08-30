@@ -1,6 +1,6 @@
 <?php
 
-namespace SearchEngine\cmd;
+namespace Graymore\SearchEngine\cmd;
 
 use SearchEngine\SearchEngine;
 

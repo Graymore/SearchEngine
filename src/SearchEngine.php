@@ -1,13 +1,13 @@
 <?php
 
-namespace SearchEngine;
+namespace Graymore\SearchEngine;
 
 use Manticoresearch\Client;
-use SearchEngine\core\TClient;
-use SearchEngine\core\TEffect;
-use SearchEngine\core\TQuery;
-use SearchEngine\core\TSearch;
-use SearchEngine\core\TTable;
+use Graymore\SearchEngine\core\TClient;
+use Graymore\SearchEngine\core\TEffect;
+use Graymore\SearchEngine\core\TQuery;
+use Graymore\SearchEngine\core\TSearch;
+use Graymore\SearchEngine\core\TTable;
 use stdClass;
 
 interface Engine {

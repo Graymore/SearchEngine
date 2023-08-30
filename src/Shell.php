@@ -10,23 +10,23 @@
 |
 */
 
-namespace SearchEngine;
+namespace Graymore\SearchEngine;
 
 /** The need to use php artisan api. */
 use Illuminate\Console\Command;
 
-use SearchEngine\cmd\INVOKE;
-use SearchEngine\cmd\TDrop;
-use SearchEngine\cmd\THelp;
-use SearchEngine\cmd\TImport;
-use SearchEngine\cmd\TReset;
-use SearchEngine\cmd\TSchema;
-use SearchEngine\cmd\TSearchd;
-use SearchEngine\cmd\TPrint;
-use SearchEngine\cmd\TShow;
-use SearchEngine\cmd\TStatus;
-use SearchEngine\cmd\TTruncate;
-use SearchEngine\cmd\TVersion;
+use Graymore\SearchEngine\cmd\INVOKE;
+use Graymore\SearchEngine\cmd\TDrop;
+use Graymore\SearchEngine\cmd\THelp;
+use Graymore\SearchEngine\cmd\TImport;
+use Graymore\SearchEngine\cmd\TReset;
+use Graymore\SearchEngine\cmd\TSchema;
+use Graymore\SearchEngine\cmd\TSearchd;
+use Graymore\SearchEngine\cmd\TPrint;
+use Graymore\SearchEngine\cmd\TShow;
+use Graymore\SearchEngine\cmd\TStatus;
+use Graymore\SearchEngine\cmd\TTruncate;
+use Graymore\SearchEngine\cmd\TVersion;
 
 
 /** Implementation of the main interface of the module. */

@@ -1,6 +1,6 @@
 <?php
 
-namespace SearchEngine\core;
+namespace Graymore\SearchEngine\core;
 
 trait TQuery {
     protected string|null $query = null;

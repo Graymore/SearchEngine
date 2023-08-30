@@ -1,6 +1,6 @@
 <?php
 
-namespace SearchEngine;
+namespace Graymore\SearchEngine;
 
 class ShellTable
 {

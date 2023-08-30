@@ -1,6 +1,6 @@
 <?php
 
-namespace SearchEngine\cmd;
+namespace Graymore\SearchEngine\cmd;
 
 trait TReset {
     protected array $RESET_EX_LIST = [

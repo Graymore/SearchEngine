@@ -1,6 +1,6 @@
 <?php
 
-namespace SearchEngine\cmd;
+namespace Graymore\SearchEngine\cmd;
 
 trait TVersion {
     protected string $v_engine;

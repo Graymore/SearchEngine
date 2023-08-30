@@ -1,6 +1,6 @@
 <?php
 
-namespace SearchEngine\core;
+namespace Graymore\SearchEngine\core;
 
 use stdClass;
 
