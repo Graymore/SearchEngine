@@ -3,9 +3,15 @@
     "type": "library",
     "keywords": ["search", "searchengine", "graymore"],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Graymore",
+            "email": "voult@list.ru"
+        }
+    ],
     "autoload": {
         "psr-4": {
-            "Graymore\\SearchEngine\\": "src/"
+            "Graymore\\SearchEngine\\": "src"
         }
     },
     "autoload-dev": {
@@ -15,22 +21,19 @@
     },
     "extra": {
         "laravel": {
+            "providers": [
+                "Graymore\\SearchEngine\\SearchServiceProvider"
+            ],
             "aliases": {
                 "SearchEngine": "Graymore\\SearchEngine\\SearchEngine"
             }
         }
     },
-    "authors": [
-        {
-            "name": "Graymore",
-            "email": "voult@list.ru"
-        }
-    ],
+    "minimum-stability": "dev",
     "require": {
         "manticoresoftware/manticoresearch-php": "^3.0",
         "php": ">=8.0",
-        "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0",
-        "illuminate/console": "^8.0|^9.0|^10.0"
+        "laravel/framework": "^8.0|^9.0|^10.0"
     },
     "require-dev": {
         "phpunit/phpunit": ">=7.5"

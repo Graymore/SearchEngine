@@ -9,15 +9,19 @@ class SearchServiceProvider extends ServiceProvider
 
     public function register(): void
     {
-        $this->commands([
-            \SearchEngine\Shell::class
-        ]);
+        $this->registerCommands();
     }
 
     public function boot(): void
     {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                Shell::class,
+            ]);
+        }
+
         $this->publishes([
             __DIR__.'/../config/search.php' => config_path('search.php'),
-        ]);
+        ], 'search-config');
     }
 }
