@@ -1,6 +1,6 @@
 <?php
 
-namespace SearchEngine\Providers;
+namespace SearchEngine;
 
 use Illuminate\Support\ServiceProvider;
 

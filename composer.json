@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Graymore\\SearchEngine\\": "src"
+            "Graymore\\SearchEngine\\": "src/"
         }
     },
     "autoload-dev": {
