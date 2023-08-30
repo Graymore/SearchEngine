@@ -6,8 +6,16 @@ use Illuminate\Support\ServiceProvider;
 
 class SearchServiceProvider extends ServiceProvider
 {
+
+    public function register() {
+        $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+        $loader->alias('SearchEngine', 'Graymore\SearchEngine\SearchEngine');
+    }
+
     public function boot(): void
     {
+        $loader->alias('AuthorizationServer', 'LucaDegasperi\OAuth2Server\Facades\AuthorizationServerFacade');
+
         $this->commands([
             Shell::class,
         ]);
