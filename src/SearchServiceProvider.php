@@ -14,8 +14,6 @@ class SearchServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        $loader->alias('AuthorizationServer', 'LucaDegasperi\OAuth2Server\Facades\AuthorizationServerFacade');
-
         $this->commands([
             Shell::class,
         ]);
