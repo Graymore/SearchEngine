@@ -6,7 +6,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Graymore\\SearchEngine\\Providers\\SearchServiceProvider"
+                "Providers\\SearchServiceProvider"
             ],
             "aliases": {
                 "SearchEngine": "Graymore\\SearchEngine\\SearchEngine"
