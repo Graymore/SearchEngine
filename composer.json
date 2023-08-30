@@ -6,16 +6,16 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SearchEngine\\Providers\\SearchServiceProvider"
+                "Graymore\\SearchEngine\\SearchServiceProvider"
             ],
             "aliases": {
-                "SearchEngine": "SearchEngine\\SearchEngine"
+                "SearchEngine": "Graymore\\SearchEngine\\SearchEngine"
             }
         }
     },
     "autoload": {
         "psr-4": {
-            "Graymore\\SearchEngine\\": "src/"
+            "Graymore\\SearchEngine\\": "src"
         }
     },
     "autoload-dev": {
