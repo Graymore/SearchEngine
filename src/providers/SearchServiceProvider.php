@@ -3,7 +3,6 @@
 namespace SearchEngine\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use SearchEngine\SearchEngine;
 
 class SearchServiceProvider extends ServiceProvider
 {
@@ -12,5 +11,11 @@ class SearchServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/search.php' => config_path('search.php'),
         ]);
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                \SearchEngine\Shell::class
+            ]);
+        }
     }
 }
