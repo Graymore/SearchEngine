@@ -1,17 +1,11 @@
 <?php
 
-namespace SearchEngine;
+namespace Graymore\SearchEngine;
 
 use Illuminate\Support\ServiceProvider;
 
 class SearchServiceProvider extends ServiceProvider
 {
-
-    public function register(): void
-    {
-        $this->registerCommands();
-    }
-
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
