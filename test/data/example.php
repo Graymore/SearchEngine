@@ -2,15 +2,6 @@
 
 namespace SearchEngine\data;
 
-interface SearchEngineTable {
-    public function __CREATE__(array $fields): bool;
-    public function __READ__(int $id): array;
-    public function __UPDATE__(array $fields, int $id): bool;
-    public function __DROP__(): bool;
-    public function __INSERT__(array $fields, int $id): bool;
-    public function __IMPORT__(mixed $console);
-}
-
 use SearchEngine\SearchEngine;
 use SearchEngine\ShellTable;
 
