@@ -50,6 +50,18 @@ class example extends ShellTable implements SearchEngineTable
         return true;
     }
 
+    public function __DELETE__(int $id): bool
+    {
+        (new SearchEngine())->table($this->tableName)->delete($id);
+        return true;
+    }
+
+    public function __TRUNCATE__(): bool
+    {
+        (new SearchEngine())->table($this->tableName)->truncate();
+        return true;
+    }
+
     public function __IMPORT__(mixed $console): void {
         $console->shell->info('Import is working!');
     }

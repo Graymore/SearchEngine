@@ -16,6 +16,18 @@ class ShellTable
         return $this->instance->__CREATE__($fields);
     }
 
+    public function insert(array $fields): array {
+        return $this->instance->__INSERT__($fields);
+    }
+
+    public function delete(int $id): bool {
+        return $this->instance->__DELETE__($id);
+    }
+
+    public function truncate(): bool {
+        return $this->instance->__TRUNCATE__();
+    }
+
     public function read(int $id): array {
         return $this->instance->__READ__($id);
     }
