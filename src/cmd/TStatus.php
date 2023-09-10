@@ -2,7 +2,7 @@
 
 namespace Graymore\SearchEngine\cmd;
 
-use SearchEngine\SearchEngine;
+use Graymore\SearchEngine\SearchEngine;
 
 trait TStatus {
     public function status(): void {

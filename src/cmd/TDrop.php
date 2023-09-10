@@ -2,7 +2,7 @@
 
 namespace Graymore\SearchEngine\cmd;
 
-use SearchEngine\SearchEngine;
+use Graymore\SearchEngine\SearchEngine;
 
 trait TDrop {
     public function drop(): void {

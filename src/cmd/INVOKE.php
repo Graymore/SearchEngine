@@ -2,7 +2,7 @@
 
 namespace Graymore\SearchEngine\cmd;
 
-use SearchEngine\SearchEngine;
+use Graymore\SearchEngine\SearchEngine;
 
 trait INVOKE {
     public function __INSTANCE(): \stdClass {
