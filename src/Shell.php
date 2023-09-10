@@ -74,7 +74,7 @@ class Shell extends Command implements SearchShell
 
     public function handle()
     {
-        $conf                 = require_once config_path('search.php');
+        $conf                 = require config_path('search.php');
 
         $this->aliases        = $conf['aliases/data'];
         $this->searchd_path   = $conf['path'];
