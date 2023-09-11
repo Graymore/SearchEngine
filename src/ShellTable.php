@@ -20,25 +20,13 @@ class ShellTable extends TableInterface
         return $this->instance->__INSERT__($fields);
     }
 
-    public function delete(int $id): bool {
-        return $this->instance->__DELETE__($id);
-    }
-
     public function truncate(): bool {
         return $this->instance->__TRUNCATE__();
-    }
-
-    public function read(int $id): array {
-        return $this->instance->__READ__($id);
     }
 
     public function drop(): bool
     {
         return $this->instance->__DROP__();
-    }
-
-    public function update(array $fields, int $id): bool {
-        return $this->instance->__UPDATE__($fields, $id);
     }
 
     public function import(mixed $console)
