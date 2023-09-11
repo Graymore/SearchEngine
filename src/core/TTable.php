@@ -72,4 +72,8 @@ trait TTable {
     {
         return $this->table->updateDocument($inputs, $id);
     }
+
+    public function optimize(bool $sync = false) {
+        return $this->table->optimize($sync);
+    }
 }

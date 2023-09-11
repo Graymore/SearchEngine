@@ -46,4 +46,8 @@ class ShellTable extends TableInterface
         $console->shell->line("<bg=blue> >>> </><fg=green> {$this->instance->title}</> {$this->instance->description}");
         return $this->instance->__IMPORT__($console);
     }
+
+    public function optimize(bool $sync = false) {
+        return $this->instance->__OPTIMIZE__($sync);
+    }
 }

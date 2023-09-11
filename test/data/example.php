@@ -10,50 +10,39 @@ class example extends ShellTable implements SearchEngineTable
     public string $title        = 'Example title.';
     public string $description  = 'Example Description.';
     public string $tableName    = 'example';
+    public array $fields = [
+        'uid' => ['type' => 'int'],
+        'title' => ['type' => 'text'],
+        'content' => ['type' => 'text'],
+        'tags' => ['type' => 'string'],
+        'created_at' => ['type' => 'timestamp'],
+        'updated_at' => ['type' => 'timestamp']
+    ];
 
-    public function __CREATE__(array $fields): bool
+    public function __CREATE__(): bool
     {
-        (new SearchEngine())->table($this->tableName)->create($fields);
+        (new SearchEngine())->table($this->tableName)->create($this->fields);
         return true;
     }
-
-    public function __READ__(int $id): array
-    {
-        return (new SearchEngine())
-            ->sql("SELECT uid FROM {$this->tableName} WHERE uid={$id}");
-    }
-
-    public function __UPDATE__(array $fields, int $id): bool
-    {
-        // TODO: Implement __UPDATE__() method.
-        (new SearchEngine())->table($this->tableName)->update($fields, $id);
-        return true;
-    }
-
-    public function __DROP__(): bool {
-        (new SearchEngine())->table($this->tableName)->drop();
-        return true;
-    }
-
     public function __INSERT__(array $fields, int $id): bool
     {
         (new SearchEngine())->table($this->tableName)->insert($fields, $id);
         return true;
     }
-
-    public function __DELETE__(int $id): bool
-    {
-        (new SearchEngine())->table($this->tableName)->delete($id);
+    public function __DROP__(): bool {
+        (new SearchEngine())->table($this->tableName)->drop();
         return true;
     }
-
     public function __TRUNCATE__(): bool
     {
         (new SearchEngine())->table($this->tableName)->truncate();
         return true;
     }
-
     public function __IMPORT__(mixed $console): void {
         $console->shell->info('Import is working!');
+    }
+    public function __OPTIMIZE__(bool $sync = false): bool {
+        (new SearchEngine())->table($this->tableName)->optimize($sync);
+        return true;
     }
 }
