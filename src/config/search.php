@@ -183,7 +183,7 @@ return [
 
     'v_PHP' => '8.0 letter',
 
-    'v_engine' => '1.30',
+    'v_engine' => '1.2.0-beta',
 
     'v_manticore' => '6.2.0',
 
