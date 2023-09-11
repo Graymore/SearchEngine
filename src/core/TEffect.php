@@ -14,6 +14,7 @@ trait TEffect {
                 'id' => $hit->getId(),
                 'highlight' => $this->highlight ? $hit->getHighlight() : null,
                 'score' => $hit->getScore(),
+                'source' => $hit->getData(),
             ];
         }
         $sr->objects = $objects;
