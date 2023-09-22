@@ -43,7 +43,7 @@ Performs reset methods for the specified model.
 Available models:
 * `tables` - Points to all tables in the database.
 
-### reset
+### show
 Performs show methods for the specified model.
 <br>
 <br>

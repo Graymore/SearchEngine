@@ -5,7 +5,7 @@
 After a complete installation, you should have a file `config/search.php`.
 This file is a global add-on for SearchEngine.
 
-To fully utilize SearchEngine, you need to implement your [interfaces](https://manual.manticoresearch.com/).
+To fully utilize SearchEngine, you need to implement your [interfaces](https://github.com/Graymore/SearchEngine/blob/1.x/docs/Interfaces.md).
 
 ### config params
 
