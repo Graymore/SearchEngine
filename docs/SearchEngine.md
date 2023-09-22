@@ -34,12 +34,12 @@ return $engine->tables()
 ### [limit(`int $limit`)]()
 Sets the limit for the query.
 ```php
-return $query->limit(25)
+$query->limit(25)
 ```
 ### [offset(`int $offset`)]()
 Sets the offset for the query.
 ```php
-return $query->offset(0)
+$query->offset(0)
 ```
 ### [sort(`mixed $params`)]()
 Sets the sorting for the query.
