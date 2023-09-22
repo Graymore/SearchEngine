@@ -28,11 +28,10 @@ Params:
 * `string $boolean` - If the MVA attribute can be used `min` or `max`
 
 Examples of sorting:
-<br>
-`
+```php
 $engine->sort('year','desc');
 $engine->sort('tags','asc','max');
-`
+```
 ### [where()]()
 ### [orWhere()]()
 ### [notWhere()]()
