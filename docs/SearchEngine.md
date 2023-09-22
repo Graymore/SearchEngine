@@ -5,16 +5,34 @@
 ### [client()]()
 Returns the `Client` object where `host` and `port` are initialized from the config file.
 ### [host(`string $host`)]()
-Overrides `host` parameter.
-### [port()]()
+Set `host` parameter.
+* Default value from `config/search.php`
+### [port(`int $port`)]()
+Set `port` parameter.
+* Default value from `config/search.php`
 ### [nodes()]()
 ### [tables()]()
 
 ## TQuery()
 
-### [limit()]()
-### [offset()]()
-### [sort()]()
+### [limit(`int $limit`)]()
+Sets the limit for the query.
+### [offset(`int $offset`)]()
+Sets the offset for the query.
+### [sort(`mixed $params`)]()
+Sets the sorting for the query.
+<br>
+Params:
+* `string $field` - Sorting field
+* `string $direction` - Sorting direction `asc` or `desc`
+* `string $boolean` - If the MVA attribute can be used `min` or `max`
+
+Examples of sorting:
+<br>
+`
+$engine->sort('year','desc');
+$engine->sort('tags','asc','max');
+`
 ### [where()]()
 ### [orWhere()]()
 ### [notWhere()]()
