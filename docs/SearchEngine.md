@@ -4,7 +4,8 @@
 
 ### [client()]()
 Returns the `Client` object where `host` and `port` are initialized from the config file.
-### [host()]()
+### [host(`string $host`)]()
+Overrides `host` parameter.
 ### [port()]()
 ### [nodes()]()
 ### [tables()]()
