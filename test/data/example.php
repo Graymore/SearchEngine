@@ -5,7 +5,7 @@ namespace SearchEngine\data;
 use SearchEngine\SearchEngine;
 use SearchEngine\ShellTable;
 
-class example extends ShellTable implements SearchEngineTable
+class example extends ShellTable
 {
     public string $title        = 'Example title.';
     public string $description  = 'Example Description.';
