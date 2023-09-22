@@ -40,6 +40,7 @@ interface Engine {
     public function ranker(string $ranker): static;
     public function query(string $query, bool $concat = true): static;
     public function highlight(bool $val = true): static;
+    public function optimize(bool $sync = false);
 }
 
 class SearchEngine implements Engine {
