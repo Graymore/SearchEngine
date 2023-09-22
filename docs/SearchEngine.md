@@ -4,21 +4,43 @@
 
 ### [client()]()
 Returns the `Client` object where `host` and `port` are initialized from the config file.
+```php
+return $engine->client()
+```
+
 ### [host(`string $host`)]()
 Set `host` parameter.
 * Default value from `config/search.php`
+```php
+$engine->host('127.0.0.1')
+```
 ### [port(`int $port`)]()
 Set `port` parameter.
 * Default value from `config/search.php`
+```php
+$engine->port(9308)
+```
 ### [nodes()]()
+```php
+return $engine->nodes()
+```
 ### [tables()]()
+```php
+return $engine->tables()
+```
 
 ## TQuery()
 
 ### [limit(`int $limit`)]()
 Sets the limit for the query.
+```php
+return $query->limit(25)
+```
 ### [offset(`int $offset`)]()
 Sets the offset for the query.
+```php
+return $query->offset(0)
+```
 ### [sort(`mixed $params`)]()
 Sets the sorting for the query.
 <br>
